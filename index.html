@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    
+    <div class="side-bar">
+      
+      <div class="close-btn">
+        <span style="padding-right: 60px;">Content</span><i class="fas fa-times"></i>
+      </div>
+      <div class="menu-btn">
+        <span style="padding-right: 60px;">Content</span><i class="fas fa-bars"></i>
+      </div>
+      <div class="menu">
+        <div class="item"><a href="#Summary"><i class="fas fa-desktop"></i><span class="holder">Summary</span></a></div>
+        <div class="item"><a href="#Goals"><i class="far fa-paper-plane"></i></i><span class="holder">Goals</span></a></div>
+        <div class="item"><a href="#Problem"><i class="fab fa-think-peaks"  style="font-size: 18px;"></i><span class="holder">Problem Analysis</span></a></div>
+        <div class="item">
+          <a class="sub-btn"><i class="fab fa-medapps" style="font-size: 22px; font-weight: 550;"></i><span class="holder">Solution</span><i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#Tech" class="sub-item">Technology</a>
+            <a href="#Idea" class="sub-item">Basic Idea</a>
+            <a href="#AppOverview" class="sub-item">App Overview</a>
+            <a href="#Working" class="sub-item">Working</a>
+          </div>
+        </div>
+        <div class="item"><a href="#Deployment"><i class="fas fa-th"></i><span class="holder">Deployment</span></a></div>
+        <div class="item"><a href="#Result"><i class="fas fa-poll" style="font-size: 20px;"></i><span class="holder">Result</span></a></div>
+        <!-- <div class="item">
+          <a class="sub-btn clickable"><i class="fas fa-cogs"></i><span class="holder">Settings</span><i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Sub Item 01</a>
+            <a href="#" class="sub-item">Sub Item 02</a>
+          </div>
+        </div>
+        <div class="item"><a href="#"><i class="fas fa-info-circle"></i><span class="holder">About</span></a></div> -->
+      </div>
+    </div>
+    <section class="main">
+      <h2 style="padding-top: 20px;">Automated Timetable Generator</h2>
+      <img src="https://www.softwaresuggest.com/blog/wp-content/uploads/2019/10/Advantages-of-Timetable-Management-System-in-Schools.png" width = "100%" alt="timetable" style="max-width:fit-content; padding-top: 50px; padding-left: 10px; padding-bottom: 45px;"/>
+      <div id="Summary" style="display: inline-block;">
+      <h2 id="subheading">
+        Executive Summary
+      </h2>
+      
+      <p>
+        <img src="https://www.edusys.co/images/timetable-software.png" width="564" height="395" style="max-width:fit-content; float:right;"/>
+        Time table scheduling has been in human requirements since all thought of managing time effectively. It is widely used in schools, and other fields of teaching and working like crash courses, coaching centers, training programs, etc. In the early days, timetable scheduling was done manually with one single person or some group involved in the task of scheduling it with their hands, which takes a lot of effort and time. While scheduling even the smallest constraints can take a lot of time and the cases are even worse when the number of constraints or the amount of data to deal with increases. In such cases, a perfectly designed timetable is reused for the whole generation without any changes. So the basic problem was to design a time table generator that could help create an automated timetable to save time in every aspect.</p>
+        <p>
+        The main motive is to design a new application that can be used on mobile phones so that any student or any teacher can view and update their day time table whenever or wherever they want. They can even send a notification to the children of the respective class if some important notice is there to be shared. We will develop an application that helps to create and update a timetable, set reminders for the task, notices for unavailability of the teacher, provide a proxy for them, etc.
+
+
+        
+      </p>
+      
+    </div>
+
+      <div class="line"></div>
+      <div id="Goals" style="display: inline-block;">
+      <h2 id="subheading">
+        Goals & Objectives
+      </h2>
+      <p>
+        
+        To provide on-time services and easy way to teacher and students for the management of time table. The goal is to bring student and teacher better management services. The objective is that the product should be able to generate its own time table according to the user inputs and constraints.<br></p>
+        
+        <img src="timetable-schedule.png"  width="100%" height="600" style="max-width:fit-content;"/>
+
+    </div>
+
+      <div class="line"></div>
+      <div id="Problem" style="display: inline-block;">
+      <h2 id="subheading">
+        Problem Analysis
+      </h2>
+      <img src="Brainstorming.jpg"  width="100%"  style="max-width:fit-content; float:right;"/>
+      <p>
+        According to all the survey and research we performed, we came across some common problems they are:-  </p>
+      
+        <ol id="listtheme">
+          
+        <li>Student use dairy or copy to keep a record of time table, which sometimes gets lost or misplaced.</li>
+        <li>Teachers keep pages and carry them along.</li>
+        <li>Some institutes pin the class timetable in the notice board, so after every lecture students and teachers have to go to the notice board to see which lecture it is.</li>
+        <li>There is no such famous app that all the colleges or schools use(so we need an app).</li>
+        <li>Some institutes send the timetable to the students and teachers through WhatsApp or some other applications, in which it gets very perplexing to find that document after a time as many new messages come and the document becomes old.</li>
+        <li>Generating a timetable for all the classes in the institution is very back-breaking work, it takes a lot of time.</li>
+       
+      </ol>
+       
+    
+    </div>
+
+      <div class="line"></div>
+      <div id="Tech" style="display: inline-block;">
+        <h2 id="subheading">
+          Applied Technologies
+          
+        </h2>
+        <ol id="listtheme">
+          <img src="https://www.edureka.co/blog/wp-content/uploads/2018/10/How-to-become-a-Full-Stack-Web-Developer--451x300.png" style="float:left;"/><br>
+       <li><strong>Front-end </strong>:- We have used HTML(for the structure of UI), CSS(for the looks of UI, JavaScript and    bootstrap for UX.
+       </li>
+<li><strong>Database </strong>:- We have used MongoDB for the saving database.</li>
+<li><strong>Framework </strong>:- The main JavaScript framework we have used is for UX Expressjs.</li>
+<li><strong>Host </strong>:- We have hosted our website using Amazon Ec2.</li>
+      </ol>
+      </div>
+      <div class="line"></div>
+      <div id="Idea" style="display: inline-block;">
+        <h2 id="subheading">
+        Basic Idea
+        </h2>
+        <p>We will develop a multi-platform application (which will work on all kinds of systems, like mobile phones, tablets, computer, etc), this application will consist of the solution to various problems and they are:-
+        </p>
+        
+          <ul id="listtheme" style="list-style-type: none;">
+            <img src="https://www.electrochem.org/wp-content/uploads/2017/09/idea.png"  width="240" height="190" style="max-width:fit-content; float:left; padding-right:30px;"/>
+          <li>This app will contain the ability to generate time table according to the input by the user.</li>
+          <li> User can give input about the number of lectures they need for any particular subject in a session, week, or day.</li>
+          <li>The app will pop a message in the teacher’s mobile phone a minute before their lecture starts having information about which subject they have to take and in which class.</li>
+          <li>The app will also have the feature that if by chance teacher is not going to take his/her lecture in any class he/she can send a notification to all the students of that class and that message will also go to the HOD who will arrange the proxy for the same.</li>
+          <li>The app will also send the notification to all the teachers 5 minutes before the college/school starts for their attendance, so that HOD's and all Students can know if their teachers are present or not on that day.</li>
+        </ul>
+        
+      </div>
+      <div class="line"></div>
+      <div id="AppOverview" style="display: inline-block;">
+        <h2 id="subheading">
+          Application Overview
+        </h2>
+        <p>The app will be made for three sections:-</p>
+        <ol id="listtheme">
+          <img src="https://static.mycc.in/static_asserts/assets/myclass_site_new/images/modules/timetable3.jpg" width="70%" style="float:right; padding-left: 10px;"/>
+          <li>Administrator</li>
+          <li>Teacher</li>
+        <li>Student</li>
+        </ol>
+          <p>
+            
+          The function of the administrator module is to look after all the activities and if the app is working properly, it is also responsible for providing the authorities; it will look after the responsibility of adding, deleting, editing entries in the master timetable.</p>
+          <p>The functions of the Lecturer module are to view the timetable for the respective lecturer. The teacher can schedule the cancellation of any class in the whole semester. This will send a notification to the associated students with that class.</p>
+          <p>The functions of the Student module are to view the class of any day of the week. The student can further update his/her profile, group, or batch at any point of time.</p>
+          <p> One powerful feature of the system is to interlink Lecturer and Student modules in such a way that, whenever a Lecturer wishes to cancel a particular class in the respective schedule, all the students linked with that class will get notified. The system also contains a database, which stores the lecturers and students details, which can only be seen by the admin.</p>
+          
+      </div>
+      <div class="line"></div>
+      <div id="Working" style="display: inline-block;">
+        <h2 id="subheading">
+          Working
+        </h2>
+        
+        <p>The working of the automated app is as follows:-
+        </p>
+        <p>
+          First of all, The institution needs to register themselves in the app providing all the details of their staffs, students, and their respective roles in the organization.</p>
+        <p>If registration gets validated than all their data will get stored in the database. </p>
+        <img src="wf1.png" height = "400" style="padding-left: 20px;"/>
+        <p>Then, the user will first need to register them, than according to the details sent by their organization they will be allot their module.</p>
+        <img src="wf2.png" height = "450" style="padding-left: 20px; float:right"/>
+        <p><strong><u>Note</u></strong>:-<i>The application consists of 4 sections, namely:- Class incharge, Head of department, Professors, Students. </i></p>
+        <p><i>All the sections have different-different options when they login.</i></p><p><i>Options available for:-
+          <ol id="listtheme">
+            <li>Class-Incharge :- Read notice, create time table, give suggestions, give notice, approve students leave application.</li>
+            <li>HOD :- Read notice, give approval for class incharges and other professors leave application, approve time table, give suggestion for timetable, give notice.</li>
+            <li>Professor :- Read and write notice.</li>
+            <li>Student :- Read and write notice.</li>
+          </ol>
+        </i></p>
+        <p><strong>Creating the time table:-</strong></p>
+        <ol id="listtheme">
+          <li>The class incharge will create a suggestion containing all the info’s, like the number and name of subjects, what to do with the lengthy or tough subject, whether to keep them before lunch or at what time slot, and all.</li>
+          <li>This suggestion will be sent to HOD for approval or any other suggestions that are needed to be added in the time table.</li>
+          <li>The Class incharge will add the HOD's suggestion into his suggestion and again send it to the HOD.</li>
+          <li>Now HOD either approves the timetable or gives more suggestions.</li>
+          <li>Once the timetable is approved by HOD it will be updated in the database and a notification will be sent to all that "time table has been updated".
+          </li>
+        </ol>
+        <img src="wf3.png" height = "500" style="padding-left: 20px;"/>
+        <p><strong>Sending a Notice:-</strong></p>
+        <p>Only the HOD has the authority to write a notice.</p>
+        <img src="wf4.png" height = "500" style="padding-left: 20px;"/>
+        <p><strong>Leave Approval:-</strong></p>
+        <ol id="listtheme">
+          <li>If the student has sent the notice for approval of the leave (the notice should have a proper reason) then the notice will be sent to the Class Incharge for approval. After approval (accepted or denied) notification will be sent to the respective student.</li>
+          <li>If the Class Incharge or the professor has sent the notice for approval of leave, then it will be sent to HOD, After HOD's response, the notification will be sent to them.</li>
+        </ol>
+        <img src="wf5.png" height = "400" style="padding-left: 20px;"/>
+
+      </div>
+      <div class="line"></div>
+      <div id="Deployment" style="display: inline-block;">
+        
+        <h2 id="subheading">
+          Deployment
+        </h2>
+        <img src="https://lh3.googleusercontent.com/proxy/Qjtm1ny5Oho-wpT8ca6oNVrl3tnhB23rT1ISY20IVJ-qH2fbHy-UoM4PH8HrwlKEWPm_mFETNL53GF4YO9ACT-k69q3G2tI1rQ" height="205" width="300" style="padding-left: 20px; padding-bottom: 5px;  float:left;"/><br><br>
+        <p> The product was deployed using Amazon cloud services. For institutes wanting to operate on local servers, the product can be adjusted to their needs
+        </p>
+        <p>To secure users' authentication Oauth2 and JWT were applied. Plenty of other security features is applied to prevent browsers from caching sensitive data of the users.
+        </p>
+       
+      </div>
+      
+            <div class="line"></div>
+      <div id="Result" style="display: inline-block;">
+        <h2 id="subheading">
+         Result
+        </h2>
+        <p>   <img src="cats.png" height="340" style="float:right; padding-left: 10px;"/><br>The app integrates a semester-wise calendar, daily attendance, and leave. Teachers can punch in the attendance of the student as well as their own. Result is that the time and paper-consuming methods of marking attendance are eliminated.
+        </p>
+        <p> Activities and subjects are allotted a particular span and time based on their nature.</p>
+        <p>
+          The timetable management system is a unanimous requirement for planning class timings in school. The system is deployed to schedule a new class, cancel an existing class, and making other changes to a timetable. It is simple and saves time and energy.
+          </p>
+          <p>Time table management will helped in scheduling practical and theory classes with suitable timings thus providing you a quality timetable, improving productivity and efficiency.
+         
+          </p>
+      </div>
+    </section>
+    
+    <!-- Footer Start -->
+    <div class="ta-footer">
+
+      <div class="ta-footer-content">  
+        
+        <div class="ta-footer-section ta-contact-form">
+          
+          <h2 >About us</h2>
+            <p>
+              We can’t do anything alone. <br>Everyone has their flaws and imperfections,<br> but that’s what drives us to work together as a team,<br>to make up for those flaws. <br>Together, we make the perfect main character.
+            </p>            
+          </div>
+        <div class= "ta-footer-section ta-about">
+          <h1 class="ta-logo-text"><span>PAREN</span>THESIS</h1>
+          <ul>
+            <li>
+              Shubham Jain
+            </li>
+            <li>
+              Amrit Matharu
+            </li>
+           
+            <li>
+              Chahat Tekwani
+            </li>
+            
+            <li>
+              Abhishek Giri
+            </li>
+            <li>
+              I Navya Kruti
+            </li>
+            
+          </ul>
+        </div>
+        
+        
+      </div>   
+        
+     </div>
+     <footer>
+      &copy;2021 Copyright: PARENTHESIS
+     </footer>
+
+
+     <script type="text/javascript">
+      $(document).ready(function(){
+        //jquery for toggle sub menus
+        
+        $('.dropdown').css("display", "none");
+        $('.close-btn').css("display", "none");
+        $('.item a').css("margin-left","179px");
+        $('.sub-btn').off('click');
+        var x = 0;
+        
+  
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn .fas').click(function(){
+          $('.side-bar').addClass('active');
+          $('.main').addClass('modmain');
+          $('.menu-btn').css("display", "none");
+          $('.close-btn').css("display", "block");
+          $('.ta-footer').css("margin-left","250px");
+          $('footer').css("margin-left","250px");
+          x=1;
+          $('.sub-btn').on('click',function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+          });
+          $('.item a span').removeClass('holder');
+          $('.item a').css("margin","0px")
+          $('.dropdown').css("display", "block");
+        });
+  
+        $('.menu').mouseover(function(){
+          if (x==0) {
+            $('.side-bar').addClass('active');
+            $('.main').addClass('modmain');
+            // $('.menu-btn').css("display", "none");
+            // $('.close-btn').css("display", "block");
+            $('.ta-footer').css("margin-left","250px");
+            $('footer').css("margin-left","250px");
+            $('.sub-btn').on('click',function(){
+              $(this).next('.sub-menu').slideToggle();
+              $(this).find('.dropdown').toggleClass('rotate');
+            });
+            $('.item a span').removeClass('holder');
+            $('.item a').css("margin","0px")
+            $('.dropdown').css("display", "block");
+          }
+        });
+  
+        $('.close-btn .fas').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.main').removeClass('modmain');
+          $('.sub-menu').slideUp();
+          $('.sub-btn').off('click');
+          x=0;
+          $('.ta-footer').css("margin-left","60px")
+          $('footer').css("margin-left","60px")
+          $('.menu-btn').css("display", "block");
+          $('.close-btn').css("display", "none");
+          $('.item a span').addClass('holder');
+          $('.item a').css("margin-left","179px");
+          $('.dropdown').css("display", "none");
+        });
+        $('.side-bar').mouseout(function(){
+          if (x==0) {
+            $('.side-bar').removeClass('active');
+            $('.main').removeClass('modmain');
+            if($('.item a').css("margin-left") == "179px"){
+              $('.sub-menu').slideUp();
+            }            
+            $('.sub-btn').off('click');
+            $('.ta-footer').css("margin-left","60px")
+            $('footer').css("margin-left","60px")
+            // $('.menu-btn').css("display", "block");
+            // $('.close-btn').css("display", "none");
+            $('.item a span').addClass('holder');
+            $('.item a').css("margin-left","179px");
+            $('.dropdown').css("display", "none");
+          }           
+        });
+      });
+      </script>
+  </body>
+</html>
