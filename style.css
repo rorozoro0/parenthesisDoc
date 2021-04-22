@@ -47,7 +47,7 @@ margin-left:30px;
   color: #fff;
   backdrop-filter: blur(15px);
   width: 250px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: -190px;
@@ -199,7 +199,7 @@ footer{
   color:rgba(245, 245, 245, 0.788);
   /* padding-top: 10px; */
   margin-left: 60px;
-  
+  right: 0;
   position:relative;
   bottom:0;
   transition: 0.6s ease;
@@ -273,6 +273,15 @@ footer{
 @media screen and (max-width: 780px){
   .ta-footer{
     height: auto;
+
+  }
+  #Summary img,
+  #Working img,
+  #Result img,
+  #Deployment img,
+  #AppOverview img,
+  #Tech img{
+    width: 100%;
 
   }
   .ta-footer-content {
